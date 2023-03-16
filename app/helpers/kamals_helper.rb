@@ -1,0 +1,2 @@
+module KamalsHelper
+end

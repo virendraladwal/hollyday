@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Arsha Bootstrap Template - Index</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <%# <link href="assets/img/favicon.png" rel="icon" /> %>
+    <%# <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> %>
+    <!-- Google Fonts -->
+    <%# <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    /> %>
+    <!-- Vendor CSS Files -->
+    <%# <link href="assets/vendor/aos/aos.css" rel="stylesheet" /> %>
+    <%# <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> %>
+    <%# <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    /> %>
+    <%# <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" /> %>
+    <%# <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    /> %>
+    <%# <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" /> %>
+    <%# <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> %>
+    <!-- Template Main CSS File -->
+    <%# <link href="assets/css/style.css" rel="stylesheet" /> %>
+    <!-- =======================================================
+  * Template Name: Arsha - v4.11.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <!-- Vendor CSS Files -->
+    <%# <link rel="stylesheet" href="#{Rails.root}/css/bootstrap.min.css"> %>
+    <%#= stylesheet_link_tag "aos.css" %>
+    <%#= stylesheet_link_tag "bootstrap.min.css" %>
+    <%#= stylesheet_link_tag "bootstrap-icons.css" %>
+    <%#= stylesheet_link_tag "boxicons.min.css" %>
+    <%#= stylesheet_link_tag "glightbox.min.css" %>
+    <%#= stylesheet_link_tag "remixicon.css" %>
+    <%#= stylesheet_link_tag "swiper-bundle.min.css" %>
+    <%#= stylesheet_link_tag "style.css" %>
+    <%# <link href="/app/assets/vendor/aos/aos.css" rel="stylesheet" /> %>
+    <%# <link href="/app/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/> %>
+    <%# <link href="/app/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/> %>
+    <%# <link href="/app/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" /> %>
+    <%# <link href="/app/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/> %>
+    <%# <link href="/app/assets/vendor/remixicon/remixicon.css" rel="stylesheet" /> %>
+    <%# <link href="/app/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> %>
+    <!-- Template Main CSS File -->
+    <%# <link href="#{Rails.root}/app/assets/css/style.css" rel="stylesheet" /> %>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <!-- .navbar -->
+  </div>
+  <%# </header> %>
+  <!-- End Header -->
+  <%# -----------------------------header  %>
+  <%= render 'header' %>
+  <!-- ======= Hero Section ======= -->
+  <%# --------------------------------------------------hero  %>
+  <%= render 'hero' %>
+  <!-- End Hero -->
+  <main id="main">
+    <!-- ======= Clients Section ======= -->
+    <%# -----------------------------------------------------Clients %>
+    <%= render 'client' %>
+    <!-- End Cliens Section -->
+    <!-- ======= About Us Section ======= -->
+    <%# ------------------------------------------------------------about  %>
+    <%= render 'about' %>
+    <!-- End About Us Section -->
+    <!-- ======= Why Us Section ======= -->
+    <%# ---------------------------------------------------whyUs %>
+    <%= render 'whyUs' %>
+    <!-- End Why Us Section -->
+    <!-- ======= Skills Section ======= -->
+    <%# ----------------------------------------------------------Skills %>
+    <% @skills.each_slice(4).each do |pro|%>
+      <%= render 'skill', project:pro %>
+    <% end %>
+    <!-- End Skills Section -->
+    <!-- ======= Services Section ======= -->
+    <%# ------------------------------------------------------------server       %>
+    <% @services.each_slice(4).each do |pro| %>
+      <%= render 'service', project: pro %>
+    <% end %>
+    <%#= render 'server' %>
+    <!-- End Services Section -->
+    <!-- ======= Cta Section ======= -->
+    <%# -------------------------------------------------------------------Cta %>
+    <%= render 'cta' %>
+    <!-- End Cta Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <%# ---------------------------------------------------------------------portfolio %>
+    <%= render 'portfolio' %>
+    <!-- End Portfolio Section -->
+    <!-- ======= Team Section ======= -->
+    <%# -------------------------------------------team  %>
+    <% @teams.each_slice(4).each do |pro| %>
+      <%= render 'team', project:pro %>
+    <% end %>
+    <!-- End Team Section -->
+    <!-- ======= Pricing Section ======= -->
+    <%# -----------------------------------------princing %>
+    <% @pricings.each_slice(3).each do |pro|%>
+      <%= render 'pricing', project:pro %>
+    <% end %>
+    <!-- End Pricing Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <%# ----------------------------------------------------Frequent %>
+    <% @frequentlys.each_slice(5).each do |pro|%>
+      <%= render 'frequent', project:pro %>
+    <% end %>
+    <!-- End Frequently Asked Questions Section -->
+    <!-- ======= Contact Section ======= -->
+    <%# -----------------------------------------------------contect %>
+    <%= render 'contect' %>
+    <!-- End Contact Section -->
+  </main>
+  <!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <%# ----------------------------------------------------------------footer  %>
+  <%= render 'footer' %>
+  <!-- End Footer -->
+  <%# <div id="preloader"></div> %>
+  <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!-- Vendor JS Files -->
+  <%# --------------------------------------------------------------vendor %>
+  <%= render 'vendor' %>
+  <!-- Template Main JS File -->
+  <%# <script src="assets/js/main.js"></script> %>
+  <%#= javascript_include_tag "app/assets/jacascript/main.js" %>
+</body>
+</html>

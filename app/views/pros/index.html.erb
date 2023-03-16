@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pros</h1>
+
+<div id="pros">
+  <% @pros.each do |pro| %>
+    <%= render pro %>
+    <p>
+      <%= link_to "Show this pro", pro %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pro", new_pro_path %>

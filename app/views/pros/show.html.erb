@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pro %>
+
+<div>
+  <%= link_to "Edit this pro", edit_pro_path(@pro) %> |
+  <%= link_to "Back to pros", pros_path %>
+
+  <%= button_to "Destroy this pro", @pro, method: :delete %>
+</div>

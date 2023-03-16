@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Kamals</h1>
+
+<div id="kamals">
+  <% @kamals.each do |kamal| %>
+    <%= render kamal %>
+    <p>
+      <%= link_to "Show this kamal", kamal %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New kamal", new_kamal_path %>
